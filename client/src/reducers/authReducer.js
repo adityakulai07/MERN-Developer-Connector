@@ -12,7 +12,7 @@ export default function(state = initialState, action) {
       return {
         ...state,
         isAuthenticated: !isEmpty(action.payload),
-        user: payload
+        user: action.payload
       };
     default:
       return state;
